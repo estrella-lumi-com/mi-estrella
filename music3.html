@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e4110cf5ae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="music3.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <header>
+
+        <div class="menu ">
+            <a href="#"><img src="logott-14.png" class="logo" alt=""></a>
+            <input type="checkbox" id="menu">
+            <label for="menu"><img src="imagenes/menu.webp" class="menu-icono" alt=""></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="servicio.html">Servicios</a></li>
+                    <li><a href="index.html">Productos</a></li>
+                    <li><a href="contactanos.html">contactanos</a></li>
+                    <li><a href="mision.html">mision y vision</a></li>
+                    <li><a href="music.html">musica</a></li>
+                          
+                        
+                    
+                </ul>
+            </nav>
+            
+        </div>
+
+    </header>
+
+
+    <div class="music-container">
+    <div class="music-cont">
+    <section class="container-10">
+        <div class="player">
+            
+            
+            <h2 class="player__artist">すずめ feat.十明 </h2>
+            <h3 class="player__song">RADWIMPS</h3>
+            
+            <input type="range" value="20" min="0" class="player__level">
+
+            
+            <audio class="player__audio" controls id="audio">
+                <source src="anime.mp3" type="audio/mpeg">
+            </audio>
+            <div class="player__controls">
+                <div class="player__btn  player__btn--small blue">
+                    <i class="fas fa-backward"></i>
+                </div>
+
+                <div class="player__btn  player__btn--medium blue" id="play">
+                    <i class="fas fa-play play-btn " ></i>
+                    <i class="fas  fa-pause pause-btn hide"></i>
+                </div>
+                <div class="player__btn player__btn--small blue">
+                    <i class="fas fa-forward"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    </div>
+    <script src="music1.js"></script>
+
+</body>
+</html>

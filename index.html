@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tienda online </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carrrito.css">
+
+</head>
+<body onclick="PlayAudio()">
+    
+    <header>
+
+        <div class="menu ">
+            <a href="#"><img src="logott-14.png" class="logo" alt=""></a>
+            <input type="checkbox" id="menu">
+            <label for="menu"><img src="imagenes/menu.webp" class="menu-icono" alt=""></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="servicio.html">Servicios</a></li>
+                    <li><a href="#Product">Productos</a></li>
+                    <li><a href="contactanos.html">contactanos</a></li>
+                    <li><a href="mision.html">mision y vision</a></li>
+                    <li><a href="music.html">musica</a></li>
+                            <li class="submenu">
+                                <img src="imagenes/carrito.png" id="img-carrito" alt="carrito" >
+                                <div id="carrito">
+                                    <table id="lista-carrito">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+        
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                    <a href="#" id="vaciar-carrito" class="btn-22">vaciar carrito</a>
+                                </div>
+                            </li>
+                        
+                    
+                </ul>
+            </nav>
+            
+        </div>
+
+    </header>
+
+
+
+
+
+
+
+ <div class="container-11">
+
+        <!--image slider start-->
+     <div class="slider">
+     <div class="slides">
+         <!--radio buttons start-->
+         <input type="radio" name="radio-btn" id="radio1">
+         <input type="radio" name="radio-btn" id="radio2">
+         <input type="radio" name="radio-btn" id="radio3">
+         <input type="radio" name="radio-btn" id="radio4">
+         <!--radio buttons end-->
+         <!--slide images start-->
+         <div class="slide first">
+             <img src="22.jpg" alt="">
+         </div>
+         <div class="slide">
+             <img src="222.jpg" alt="">
+         </div>
+         <div class="slide">
+             <img src="33.jpg" alt="">
+         </div>
+         <div class="slide">
+             <img src="44.jpg" alt="">
+         </div>
+         <!--slide images end-->
+         <!--automatic navigation start-->
+         <div class="navigation-auto">
+             <div class="auto-btn1"></div>
+             <div class="auto-btn2"></div>
+             <div class="auto-btn3"></div>
+             <div class="auto-btn4"></div>
+
+         </div>
+         <!--automatic navigation end-->
+     </div>
+     <!--manual navigation start-->
+     <div class="navigation-manual">
+         <label for="radio1" class="manual-btn"></label>
+         <label for="radio2" class="manual-btn"></label>
+         <label for="radio3" class="manual-btn"></label>
+         <label for="radio4" class="manual-btn"></label>
+
+ 
+     </div>
+     <!--manual navigation end-->
+
+ </div>
+ <!--image slider end-->
+
+
+ <script type="text/javascript">
+ var counter = 1;
+ setInterval(function(){
+     document.getElementById('radio' + counter).checked = true;
+     counter++ ;
+     if(counter > 4){
+         counter = 1;
+     }
+ }, 5000);
+
+ </script>
+
+
+ </div>
+
+
+
+
+
+
+    
+
+    <main class="Product-menu" >
+
+       <section class="main-content">
+        <section class="container container-features">
+            <div class="card-feature">
+                <i><img src="imagenes/entrega.png"></i> 
+                <div class="feature-content">
+                    <span>Envio gratis </span>
+                    <p>en pedido supesrior a $70</p>
+                </div>
+            </div>
+            <div class="card-feature">
+                <i><img src="imagenes/regalo.png"></i> 
+                <div class="feature-content">
+                    <span>Carta de regalo</span>
+                    <p>Para pedidos de sanvalentin</p>
+                </div>
+            </div>
+            <div class="card-feature">
+                <i><img src="imagenes/agenda.png"></i> 
+                <div class="feature-content">
+                    
+                    <span>Agenda sin costo</span>
+                    <p>Para realizar su pedido debe cancelar el 50% </p>
+                </div>
+            </div>
+            <div class="card-feature">
+                <i><img src="imagenes/asistente.png"></i> 
+                <div class="feature-content">
+                    <center>
+                    <span>Asistencia 24/7</span>
+                    <p>contactame 0968539694 </p>
+                    </center>
+                </div>
+            </div>
+        </section>
+     </section>
+
+
+
+
+
+
+
+
+        <section class="container top-categories">
+            <div class="cont">
+            <div class="container-t"></div>
+            <div class="titulo">
+            <h1>MEJORES</h1> <span>categorias</span>
+        </div>
+        </div>
+    </div>
+            <div class="container-categories">
+                <div class="card-category category-moca">
+                    <center>
+                    <P>RAMOS ETERNOS</P>
+                    </center>
+                    <span><a href="#">vermas</a></span>
+                </div>
+                <div class="card-category category-expreso">
+                    <P>cartas</P>
+                    <span><a href="#">vermas</a></span>
+                </div>
+                <div class="card-category category-capuchino">
+                    <center>
+                    <P>cajas sorpresa</P>
+                    </center>
+                    <span><a href="#">vermas</a></span>
+                </div>
+
+            </div>
+            
+        </section>
+        <div class="container">
+
+
+            <div class="Product" id="Product">
+                <h2 class="title">RAMOS ETERNOS</h2>
+                <img class="stik" src="imagenes/stik.png" alt="">
+
+            </div>
+
+            <div class="menu-nav">
+                <div id="pro1" class="top  tab active" >PREMIUN</div>
+                <div id="pro4" class="tab" >Cinta satinada</div>
+                <div id="pro2" class="tab" >Tejidos</div>
+                <div id="pro3" class="tab" >Limpiapipas</div>
+            </div>
+
+    
+            
+            <div class="pro-cont" id="lista-1">
+
+            <div class="pro1 tab-content" >
+                <div class="box-container-1">
+                    <div class="box-1">
+                        <div class="image" >
+                            <img src="cinta/sb.jpg" alt="" data-id="1">
+                        </div>
+                        <div class="content">
+                            <h3>Boys over flawers</h3>
+                            <p>
+                                Descripción<br>
+                                Rosas 40       <br>
+                                tamaño Grande        <br>
+                                musica violin Ji Hoo       <br>
+                            </p>
+                            
+                                <spam class="precio">$100</spam>
+
+                                <a href="#" class="agregar-carrito btn-111" data-id="1"><img src="imagenes/carrito.png" ></a>
+
+                            
+                        </div>
+                    </div> 
+                    <div class="box-1">
+                        <div class="image" >
+                            <img src="limp/ed.jpg" alt="" data-id="1">
+                        </div>
+                        <div class="content">
+                            <h3>Fatalidad a  servicio</h3>
+                            <p>
+                                Descripción<br>
+                                Rosas  14       <br>
+                                tamaño  Mediano        <br>
+                                musica I WANNA BE WITH      <br>
+                            </p>
+                            
+                                <spam class="precio">$55.50</spam>
+
+                                <a href="#" class="agregar-carrito btn-111" data-id="2"><img src="imagenes/carrito.png" ></a>
+
+                            
+                        </div>
+                    </div> 
+                     <div class="box-1">
+                        <div class="image">
+                            <img src="limp/ep.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>RADWIMPS </h3>
+                            <p>
+                                Descripción<br>
+                                Rosas  9       <br>
+                                tamaño  Mediano        <br>
+                                musica   すずめ feat.十明       <br>
+                            </p>
+                            
+                                <spam class="precio">$15.00</spam>
+                                <a href="#" class="agregar-carrito btn-111" data-id="3"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div> 
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="limp/epn.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Pintor Nocturno</h3>
+                            <p>
+                                Descripción<br>
+                                Rosas  11       <br>
+                                tamaño  Mediano        <br>
+                                musica   Night Flower(야화)     <br>
+                            </p>
+                                <spam class="precio">$15.00</spam>
+                                <a href="#" class="agregar-carrito btn-111" data-id="4"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+
+                    
+                  
+
+                    
+
+                </div>
+                <center>
+                    <div class="load-more" id="load-more-1">Cargar Mas</div>
+                </center>
+            </div>
+
+            <div class="pro4 tab-content " >
+                <div class="box-container-4">
+                    <div class="box-4">
+                        <div class="image">
+                            <img src="cinta/r6.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>AMOR PURO</h3>
+                            <p>
+                                Descripción<br>
+                                1. Lazos 2 <br>
+                                2. Rosas 27<br>
+                                3. Mariposas 3<br>
+                                4. Doble en voltura<br>
+                                5. Se sostiene solo<br>                               
+                                6. Cinta con dedicatoria<br>
+                                7. Tamaño grande<br>
+                            </p>
+                                <spam class="precio">$55.00 </spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="17"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div> <div class="box-4">
+                        <div class="image">
+                            <img src="cinta/r3.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Amor en Flor
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Lazos 1 <br>
+                                2. Rosas 11<br>
+                                3. Mariposas 2<br>
+                                4. Envoltura de estrella <br>
+                                5. puede sostenerse solo<br>                               
+                                6. Es del tamaño mediano<br>
+                            </p>
+                                <spam class="precio">$20.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="18"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div> <div class="box-4">
+                        <div class="image">
+                            <img src="cinta/r5.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Recuerdo Eterno</h3>
+                            <p>
+                                Descripción<br>
+                                1. corona 1<br>
+                                2. Lazos 1 <br>
+                                3. Rosas 13<br>
+                                4. Mariposas 2<br>
+                                5. Se sostiene solo<br>                               
+                                6. Floresitas<br>
+                                7. Tamaño mediano<br>
+                            </p>
+                                <spam class="precio">$26.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="19"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div> <div class="box-4">
+                        <div class="image">
+                            <img src="cinta/rr1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3></h3>
+                            <p>
+                                Descripción<br>
+                                1. Lazos 1 <br>
+                                2. Rosas 50<br>
+                                3. Mariposas 3<br>
+                                4. Corona de princesa<br>
+                                5. Se sostiene solo<br>                               
+                                6. Cinta con dedicatoria<br>
+                                7. Tamaño EXTRA GRANDE<br>
+                            </p>
+                                <spam class="precio">$29.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="20"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+
+                    
+                    <div class="box-4">
+                        <div class="image">
+                            <img src="cinta/7.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Corazón Encantado
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Lazos 1 <br>
+                                2. Rosas 13<br>
+                                3. Mariposas 2<br>
+                                4. Floresitas<br>
+                                5. Se sostiene solo<br>                               
+                                6. Cinta con dedicatoria<br>
+                                7. Tamaño grande<br>
+                            </p>
+                                <spam class="precio">$28.50</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="21"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-4">
+                        <div class="image">
+                            <img src="cinta/1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Luz de Amor
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Lazos 1 <br>
+                                2. Rosas 7<br>
+                                3. Mariposas 2<br>
+                                4. Incluye luces<br>
+                                5. Se sostiene solo<br>                               
+                                6. Tul de decoracion<br>
+                                7. Tamaño pequeño<br>
+                            </p>
+                                <spam class="precio">$15.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="22"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-4">
+                        <div class="image">
+                            <img src="cinta/3.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Brillo del Corazón
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Girasol 1<br>
+                                2. Lazos 2 <br>
+                                3. Rosas 10<br>
+                                4. Mariposas 3<br>
+                                5. Incluye luces<br>
+                                6. Se sostiene solo<br>                               
+                                7. Cinta con dedicatoria<br>
+                                8. Tamaño grande<br>
+                            </p>
+                                <spam class="precio">$26.50</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="23"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-4">
+                        <div class="image">
+                            <img src="cinta/2.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Cielo Carmesí</h3>
+                            <p>
+                                Descripción<br>
+                                1. corona de reina 1<br>
+                                2. Rosas 20<br>
+                                3. Floresitas 5<br>
+                                4. Se sostiene solo<br>                               
+                                5. Tul de decoracion<br>
+                                6. Tamaño GRANDE<br>
+                            </p>
+                                <spam class="precio">$42.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="24"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-4">
+                        <div class="image">
+                            <img src="cinta/11.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Romance Duradero
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. fotografia <br>
+                                2. Rosas 13<br>
+                                3. Lazo 2 <br>
+                                4. tul de decoracion<br>
+                                5. Se sostiene solo<br>                               
+                                6. Tamaño grande<br>
+                            </p>
+                                <spam class="precio">$24.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="25"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-4">
+                        <div class="image">
+                            <img src="cinta/14.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Beso de Rosa
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Envoltura extravagante <br>
+                                2. Rosas 10<br>
+                                3. Mariposas 2<br>
+                                4. Plantitas de decoracion<br>
+                                5. Se sostiene solo<br>                               
+                                6. Floresitas<br>
+                                7. Tamaño grande<br>
+                            </p>
+                                <spam class="precio">$21.50</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="26"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-4">
+                        <div class="image">
+                            <img src="cinta/12.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Esplendor Eterno
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Incluye luces <br>
+                                2. Rosas 13<br>
+                                3. Mariposas 3<br>
+                                4. tul de envoltura<br>
+                                5. Se sostiene solo<br>                               
+                                6. Tamaño grande<br>
+                            </p>
+                                <spam class="precio">$23.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="27"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-4">
+                        <div class="image">
+                            <img src="cinta/10.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Corazón Puro
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. coronita de fomix 1<br>
+                                2. Rosas 12<br>
+                                3. Mariposas 1<br>
+                                4. floresitas de decoracion<br>
+                                5. Se sostiene solo<br>                               
+                                6. Tamaño grande<br>
+                            </p>
+                                <spam class="precio">$23.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="28"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-4">
+                        <div class="image">
+                            <img src="cinta/6.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Latidos Eternos</h3>
+                            <p>
+                                Descripción<br>
+                                1. Lazos 2 <br>
+                                2. Rosas 20<br>
+                                3. Mariposas 3<br>
+                                4. tul de decoracion<br>
+                                5. Se sostiene solo<br>                               
+                                6. Cinta con dedicatoria 2<br>
+                                7. Tamaño grande<br>
+                            </p>
+                                <spam class="precio">$35.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="29"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-4">
+                        <div class="image">
+                            <img src="cinta/20.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Sentimiento Profundo
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. girasol 1 <br>
+                                2. Rosas 19<br>
+                                3. floresitas de decoracion<br>
+                                4. Se sostiene solo<br>                               
+                                5. Cinta con dedicatoria<br>
+                                6. Tamaño GRANDE<br>
+                            </p>
+                                <spam class="precio">$41.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="30"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-4">
+                        <div class="image">
+                            <img src="cinta/21.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Amor y Vida
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Lazos 1 <br>
+                                2. Rosas 3<br>
+                                3. Mariposas 1<br>
+                                4. Se sostiene solo<br>                               
+                                5. Palabra dedicatoria 1<br>
+                                6. Tamaño pequeño<br>
+                            </p>
+                                <spam class="precio">$6.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="31"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-4">
+                        <div class="image">
+                            <img src="cinta/22.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Encanto Dulce
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. chocolates Ferero 10 <br>
+                                2. Rosas 10<br>
+                                3. Girasol 1<br>
+                                4. Se sostiene solo<br>                               
+                                5. mariposa 1<br>
+                                6. floresitas o tul <br>
+                                6. Tamaño Grande<br>
+                            </p>
+                                <spam class="precio">$32.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="32"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <center>
+                    <div class="load-more" id="load-more-4">Cargar Mas</div>
+                </center>
+            </div>
+
+            <div class="pro2 tab-content" >
+                <div class="box-container-2">
+
+                    
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="tejido/1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Caricia Rosada
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Rosa 1<br>
+                                2. Floresitas 5<br>
+                                3. Margarita 1<br>
+                                4. Canpana 3<br>
+                                5. Perfumada<br>
+                                6. Tamaño pequeño<br>
+                            </p>
+                                <spam class="precio">$12.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="33"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="tejido/2.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Ternura Eterna</h3>
+                            <p>
+                                Descripción<br>
+                                1. Rosa 2<br>
+                                2. Tulipanes 3<br>
+                                3. Margaritas 2<br>
+                                4. Hojas de decoracion<br>
+                                5. Perfumada<br>
+                                6. Tamaño mediano<br>
+                            </p>
+                                <spam class="precio">$29.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="34"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="tejido/3.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Sueño Rosa
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. tulipan sorpresa con un corazon dentro se abre y se cierra <br>
+                                2. Perfumada<br>
+                                3. Tamaño pequeño<br>
+                            </p>
+                                <spam class="precio">$12.75</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="35"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="tejido/4.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Suspiro de Rosa
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Rosa 3<br>
+                                2. tul de decoracion<br>
+                                3. Perfumada<br>
+                                4. Tamaño pequeño<br>
+                            </p>
+                                <spam class="precio">$10.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="36"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="tejido/5.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Sueño Rosa
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Tulipan 3<br>
+                                2. Tul de decoracion<br>
+                                4. Incluye luces<br>
+                                5. Perfumada<br>
+                                6. Tamaño pequeño<br>
+                            </p>
+                                <spam class="precio">$9.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="37"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="tejido/6.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Eternidad Rosa
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Tulipan 8<br>
+                                2. Tul de decoracion<br>
+                                3. Perfumada<br>
+                                4. Tamaño mediano<br>
+                            </p>
+                                <spam class="precio">$29.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="38"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="tejido/19.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Rosa Resplandeciente
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Rosa 1<br>
+                                2. Floresitas 6<br>
+                                3. Margarita 1<br>
+                                4. Clavel 1<br>
+                                5. amigurumi de conejo 1<br>
+                                6. Perfumada<br>
+                                7. Tamaño Mediano<br>
+                            </p>
+                                <spam class="precio">$16.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="40"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+
+                    
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="tejido/17.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Encanto Duradero
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Rosa medianas 6<br>
+                                2. Floresitas <br>
+                                3. Tul de decoracion<br>
+                                4. Perfumada<br>
+                                5. Tamaño Mediano<br>
+                            </p>
+                                <spam class="precio">$35.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="43"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="tejido/24.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Flor Eterna
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Corazón 1<br>
+                                2. rosa bicolor 2<br>
+                                3. Margarita 1<br>
+                                4. Tul de decoración<br>
+                                5. Perfumada<br>
+                                6. Tamaño pequeño<br>
+                            </p>
+                                <spam class="precio">$7.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="45"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="tejido/23.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Rosa Perpetua
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Rosa 1<br>
+                                2. Floresitas 1<br>
+                                3. Tulipan se abre se cierra<br>
+                                4. Canpana 4<br>
+                                5. Corazón afelpado 1<br>
+                                6. Perfumada<br>
+                                7. Tamaño pequeño<br>
+                            </p>
+                                <spam class="precio">$13.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="46"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="tejido/26.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Amor Duradero
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Tulipan 1<br>
+                                2. Floresitas 5<br>
+                                3. corazon arco 1<br>
+                                4. Perfumada<br>
+                                5. Tamaño pequeño<br>
+                            </p>
+                                <spam class="precio">$6.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="47"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="tejido/27.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Fragancia Infinita
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Rosa 1<br>
+                                2. abejitas 2<br>
+                                3. tul de decoracion<br>
+                                4. Perfumada<br>
+                                5. Tamaño pequeño<br>
+                            </p>
+                                <spam class="precio">$10.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="48"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="tejido/a2.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Resplandor Perpetuo
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Tulipan  5<br>
+                                2. Conejo 1<br>
+                                3. Tul decoracion<br>
+                                4. Perfumada<br>
+                                5. Tamaño mediano<br>
+                            </p>
+                                <spam class="precio">$23.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="50"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="tejido/a4.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Aura Eterna</h3>
+                            <p>
+                                Descripción<br>
+                                1. Tulipan 5<br>
+                                2. Azucena 2<br>
+                                3. Hojas de decoracion<br>
+                                4. Tul de decoracion<br>
+                                5. Perfumada<br>
+                                6. Tamaño mediano<br>
+                            </p>
+                                <spam class="precio">$28.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="52"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+
+                </div>
+                <center>
+                    <div class="load-more" id="load-more-2">Cargar Mas</div>
+                </center>
+            </div>
+
+            <div class="pro3 tab-content">
+                <div class="box-container-3">
+
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="limp/1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Sol Radiante                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Con polvo de hadas<br>
+                                2. Perfumadas<br>
+                                3. Tamaño mediano<br>
+
+                            </p>
+                                <spam class="precio">$25.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="53"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="limp/2.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Amarillo Encantado
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Con polvo de hadas<br>
+                                2. Perfumadas<br>
+                                3. Tamaño pequeño<br>
+                            </p>
+                                <spam class="precio">$10.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="54"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="limp/3.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Sol de Amor
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Con polvo de hadas<br>
+                                2. Perfumadas<br>
+                                3. Tamaño pequeño<br>
+                            </p>
+                                <spam class="precio">$15.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="55"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="limp/4.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Resplandor Dorado
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Con polvo de hadas<br>
+                                2. Perfumadas<br>
+                                3. Tamaño mediano<br>
+                            </p>
+                                <spam class="precio">$25.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="56"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="limp/r1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Del Corazón
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Con polvo de hadas<br>
+                                2. Perfumadas<br>
+                                3. Tamaño mediano<br>
+                            </p>
+                                <spam class="precio">$16.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="57"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="limp/r2.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Encanto Eterno
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Con polvo de hadas<br>
+                                2. Perfumadas<br>
+                                3. Tamaño mediano<br>
+                            </p>
+                                <spam class="precio">$15.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="58"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="limp/r3.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Pasión Sin Fin
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Con polvo de hadas<br>
+                                2. Perfumadas<br>
+                                3. Tamaño mediano<br>
+                            </p>
+                                <spam class="precio">$15.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="59"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="limp/r4.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Flor Inmortal
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Con polvo de hadas<br>
+                                2. Perfumadas<br>
+                                3. Tamaño pequeño<br>
+                            </p>
+                                <spam class="precio">$15.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="60"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="limp/r5.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Esplendor Eterno
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Incluye luces<br>
+                                1. Con polvo de hadas<br>
+                                2. Perfumadas<br>
+                                3. Tamaño mediano<br>
+                            </p>
+                                <spam class="precio">$35.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="61"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="limp/r6.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3> Flor Inmortal
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Con polvo de hadas<br>
+                                2. Perfumadas<br>
+                                3. Tamaño mediano<br>
+                            </p>
+                                <spam class="precio">$17.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="62"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="limp/r7.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Rosa Para Siempre
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Con polvo de hadas<br>
+                                2. Perfumadas<br>
+                                3. Tamaño mediano<br>
+                            </p>
+                                <spam class="precio">$23.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="63"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="limp/g1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Gerberas</h3>
+                            <p>
+                                Descripción<br>
+                                1. Con polvo de hadas<br>
+                                2. Perfumadas<br>
+                                3. Tamaño mediano<br>
+                            </p>
+                                <spam class="precio">$18.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="64"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="limp/m1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Esencia Duradera
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Con polvo de hadas<br>
+                                2. Perfumadas<br>
+                                3. Tamaño mediano<br>
+                            </p>
+                                <spam class="precio">$9.75</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="65"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="limp/m2.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Belleza Sin Fin
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Con polvo de hadas<br>
+                                2. Perfumadas<br>
+                                3. Tamaño mediano<br>
+                            </p>
+                                <spam class="precio">$14.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="66"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="limp/m3.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Resplandeciente
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Con polvo de hadas<br>
+                                2. Perfumadas<br>
+                                3. Tamaño mediano<br>
+                            </p>
+                            </p>
+                                <spam class="precio">$4.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="67"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="limp/m4.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Encanto Infinito
+
+                            </h3>
+                            <p>
+                                Descripción<br>
+                                1. Con polvo de hadas<br>
+                                2. Perfumadas<br>
+                                3. Tamaño mediano<br>
+                            </p>
+                                <spam class="precio">$17.00</spam>
+                                <a href="#" class="agregar-carrito btn-222" data-id="68"><img src="imagenes/carrito.png" ></a>
+
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <center>
+                    <div class="load-more" id="load-more-3">Cargar Mas</div>
+                </center>
+            </div>
+            
+            </div>
+
+        </div>
+    </main>
+    
+    <div class="conta">
+        <center>
+    <h2 class="personaje">ADIVINA EL PERSONAJE</h2>
+    <span class="click">has click en las tarjetas para ver si lo adivinaste </span>
+    </center>
+</div>
+
+    <section class="cuadro">
+    
+        <div class="card-1">
+            <div class="face front">
+                <img src="imagenes/kan.jpg">
+                <h3>Kang Tae-moo</h3>
+            </div>
+            <div class="face back">
+                <h3>FRASE</h3>
+                <p>Soy alto, guapo y tengo dinero. ¿Qué más se puede pedir?</p>
+                <div class="link">
+                    <a href="#">Propuesta Laboral</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card-1">
+            <div class="face front">
+                <img src="imagenes/jin.jpg">
+                <h3>oh jin-shim</h3>
+            </div>
+            <div class="face back">
+                <h3>FRASE</h3>
+                <p> ¡Me encantan los dramas judiciales... especialmente cuando no entiendo nada! </p>
+                <div class="link">
+                    <a href="#">Un Lugar en tu Corazón</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card-1">
+            <div class="face front">
+                <img src="imagenes/jun.jpg">
+                <h3>Gu Jun-pyo</h3>
+            </div>
+            <div class="face back">
+                <h3>FRASE</h3>
+                <p>El que madruga dios le da mas dinero</p>
+                <div class="link">
+                    <a href="#">Los F4</a>
+                </div>
+            </div>
+        </div>
+        </section>
+        <div class="conta">
+        <div CLASS="adivina">LO ADIVINASTE?</div>
+        </div>
+
+        
+
+        <audio id="musica1" autoplay  loop>
+            <source src="sarange.mp3" type="audio/mpeg">
+            El navegador no puede reproducir el audio.
+        </audio>
+         
+    
+    
+        <script>
+            function PlayAudio() {
+                document.getElementById("musica1").play();
+            }
+        </script>
+
+
+        
+
+
+    <section class="info">
+
+        <div class="info-content container">
+
+            <div class="info-txt">
+                <p>La caballerosidad en el amor </p>
+                <h2>Es un comportamiento</h2>
+
+                <div class="info-sec">
+
+                    <div class="info-1">
+                        <div class="info-2">
+                            <h3>#1</h3>
+                            <p>
+                                Que consiste en exigirse a uno mismo un estándar más alto en una relación: una medida de amabilidad, generosidad y respeto . Un estándar distinto del que un mundo egocéntrico espera de uno                            </p>
+                        </div>
+                    </div>
+                    <div class="info-1">
+                        <div class="info-2">
+                            <h3>#2</h3>
+                            <p>
+                                No se abre la puerta del coche ni se paga la factura porque la pareja sea incapaz; se hace para demostrar respeto.                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="info-img">
+                <img src="imagenes/r.png" altl="">
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="footer container">
+
+        <img class="logo-2" src="logo-14.png" alt="">
+
+
+        
+
+        <div class="links">
+            <h4>Menu</h4>
+            <ul>
+                <Li><a href="#">Mision y Vición</Li>
+                <Li><a href="#">Somos</Li>
+                <Li><a href="#">Inicio</a></Li>
+                <Li><a href="#">Servicios</a></Li>
+                <Li><a href="#">Productos</a></Li>
+            </ul>
+        </div>
+
+        <div class="links">
+            <h4>Terminos y condiciones</h4>
+            <ul>
+                <Li><a href="#">Terminos de rembolso</Li>
+                <Li><a href="#">Terminos de compra</Li>
+            </ul>
+        </div>
+        
+        
+
+        <div class="links">
+            <h4>has click para seguirme</h4>
+            <div class="socials">
+                <a href="#">
+                    <div class="social">
+                        <img src="imagenes/wa.png" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social">
+                        <img src="imagenes/s1.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social">
+                        <img src="imagenes/s2.png" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social">
+                        <img src="imagenes/s3.svg" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="carrito.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

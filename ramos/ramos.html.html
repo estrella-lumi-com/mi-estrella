@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tienda online </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+
+        <di class="menu container">
+            <a href="#"><img src="imagenes/logorosa.png" class="logo" alt=""></a>
+            <input type="checkbox" id="menu">
+            <label for="menu"><img src="imagenes/menu.webp" class="menu-icono" alt=""></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="">inicio</a></li>
+                    <li><a href="">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">contactanos</a></li>
+                    <li><a href="#">mision y vision</a></li>
+                    <li><a href="#">quienes somos</a></li>
+
+                </ul>
+            </nav>
+        </di>
+
+    </header>
+
+
+ <div class="container-11">
+
+         <!--image slider start-->
+ <div class="slider">
+     <div class="slides">
+         <!--radio buttons start-->
+         <input type="radio" name="radio-btn" id="radio1">
+         <input type="radio" name="radio-btn" id="radio2">
+         <input type="radio" name="radio-btn" id="radio3">
+         <input type="radio" name="radio-btn" id="radio4">
+         <!--radio buttons end-->
+         <!--slide images start-->
+         <div class="slide first">
+             <img src="1.png" alt="">
+         </div>
+         <div class="slide">
+             <img src="2.png" alt="">
+         </div>
+         <div class="slide">
+             <img src="3.png" alt="">
+         </div>
+         <div class="slide">
+             <img src="1.png" alt="">
+         </div>
+         <!--slide images end-->
+         <!--automatic navigation start-->
+         <div class="navigation-auto">
+             <div class="auto-btn1"></div>
+             <div class="auto-btn2"></div>
+             <div class="auto-btn3"></div>
+             <div class="auto-btn4"></div>
+
+         </div>
+         <!--automatic navigation end-->
+     </div>
+     <!--manual navigation start-->
+     <div class="navigation-manual">
+         <label for="radio1" class="manual-btn"></label>
+         <label for="radio2" class="manual-btn"></label>
+         <label for="radio3" class="manual-btn"></label>
+         <label for="radio4" class="manual-btn"></label>
+
+ 
+     </div>
+     <!--manual navigation end-->
+
+ </div>
+ <!--image slider end-->
+
+
+ <script type="text/javascript">
+ var counter = 1;
+ setInterval(function(){
+     document.getElementById('radio' + counter).checked = true;
+     counter++ ;
+     if(counter > 4){
+         counter = 1;
+     }
+ }, 5000);
+
+ </script>
+
+
+ </div>
+
+
+
+
+
+
+    
+
+    <main class="Product-menu">
+
+
+
+
+
+
+       
+
+
+
+       <section class="main-content">
+        <section class="container container-features">
+            <div class="card-feature">
+                <i><img src="imagenes/s1.svg"></i> 
+                <div class="feature-content">
+                    <span>envio gratuito a nivel mundial</span>
+                    <p>en pedido supesrior a $150</p>
+                </div>
+            </div>
+            <div class="card-feature">
+                <i><img src="imagenes/s1.svg"></i> 
+                <div class="feature-content">
+                    <span>envio gratuito a nivel mundial</span>
+                    <p>en pedido supesrior a $150</p>
+                </div>
+            </div>
+            <div class="card-feature">
+                <i><img src="imagenes/s1.svg"></i> 
+                <div class="feature-content">
+                    <span>envio gratuito a nivel mundial</span>
+                    <p>en pedido supesrior a $150</p>
+                </div>
+            </div>
+            <div class="card-feature">
+                <i><img src="imagenes/s1.svg"></i> 
+                <div class="feature-content">
+                    <span>envio gratuito a nivel mundial</span>
+                    <p>en pedido supesrior a $150</p>
+                </div>
+            </div>
+        </section>
+     </section>
+
+
+
+
+
+
+
+
+        <section class="container top-categories">
+            <h1 class="heading-1">mejores categorias</h1>
+            <div class="container-categories">
+                <div class="card-category category-moca">
+                    <P>cafe moca</P>
+                    <span><a href="#">vermas</a></span>
+                </div>
+                <div class="card-category category-expreso">
+                    <P>americano</P>
+                    <span><a href="#">vermas</a></span>
+                </div>
+                <div class="card-category category-capuchino">
+                    <P>capuchino</P>
+                    <span><a href="#">vermas</a></span>
+                </div>
+
+            </div>
+            
+        </section>
+        <div class="container">
+
+
+            <div class="Product">
+                <h2 class="title">menu</h2>
+                <img class="hoja" src="imagenes/hoja.png" alt="">
+            </div>
+
+            <div class="menu-nav">
+                <div id="pro1" class="tab active" >Hamburgesa</div>
+                <div id="pro2" class="tab" >Tacos</div>
+                <div id="pro3" class="tab" >Desayuno</div>
+            </div>
+
+            <div class="pro1 tab-content">
+                <div class="box-container-1">
+
+                    
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="imagenes/rr1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="imagenes/rr1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="imagenes/rr1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="imagenes/rr1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="imagenes/rr1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="imagenes/rr1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="imagenes/rr1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="imagenes/rr1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-1">
+                        <div class="image">
+                            <img src="imagenes/rr1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <center>
+                    <div class="load-more" id="load-more-1">Cargar Mas</div>
+                </center>
+            </div>
+
+            <div class="pro2 tab-content">
+                <div class="box-container-2">
+
+                    
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="imagenes/g1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="imagenes/g1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="imagenes/g1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="imagenes/g1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="imagenes/g1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="imagenes/g1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="imagenes/g1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="imagenes/g1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-2">
+                        <div class="image">
+                            <img src="imagenes/g1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <center>
+                    <div class="load-more" id="load-more-2">Cargar Mas</div>
+                </center>
+            </div>
+
+            <div class="pro3 tab-content">
+                <div class="box-container-3">
+
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="imagenes/t1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="imagenes/t1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="imagenes/t1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="imagenes/t1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="imagenes/t1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="imagenes/t1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="imagenes/t1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="imagenes/t1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <div class="image">
+                            <img src="imagenes/t1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>BURGER Premiun</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                 a minus soluta. Sunt, atque nisi!
+                            </p>
+                            <div class="icons">
+                                <spam class="price">$15.00</spam>
+                                <spam class="buy"><img src="imagenes/carrito.png" alt=""></spam>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <center>
+                    <div class="load-more" id="load-more-3">Cargar Mas</div>
+                </center>
+            </div>
+
+
+        </div>
+    </main>
+
+
+    <section class="cuadro">
+    
+        <div class="card">
+            <div class="face front">
+                <img src="hr.jpg">
+                <h3>japan</h3>
+            </div>
+            <div class="face back">
+                <h3>japan</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Harum, in, obcaecati tempore dolorum expli
+                cabo ab possimus natus iusto esse eligendi culpa
+                quisquam accusantium? Consequuntur, voluptatibus!</p>
+                <div class="link">
+                    <a href="#">detalles</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="face front">
+                <img src="hr.jpg">
+                <h3>japan</h3>
+            </div>
+            <div class="face back">
+                <h3>japan</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Harum, in, obcaecati tempore dolorum expli
+                cabo ab possimus natus iusto esse eligendi culpa
+                quisquam accusantium? Consequuntur, voluptatibus!</p>
+                <div class="link">
+                    <a href="#">detalles</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="face front">
+                <img src="hr.jpg">
+                <h3>japan</h3>
+            </div>
+            <div class="face back">
+                <h3>japan</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Harum, in, obcaecati tempore dolorum expli
+                cabo ab possimus natus iusto esse eligendi culpa
+                quisquam accusantium? Consequuntur, voluptatibus!</p>
+                <div class="link">
+                    <a href="#">detalles</a>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+    <section class="info">
+
+        <div class="info-content container">
+
+            <div class="info-txt">
+                <p>Los mejores platillos</p>
+                <h2>Informacion</h2>
+
+                <div class="info-sec">
+
+                    <div class="info-1">
+                        <img src="imagenes/inf.png" alt="">
+                        <div class="info-2">
+                            <h3>Loren</h3>
+                            <p>
+                                lorem imppun la lel lel lom ljdnfjj jmjfkjh hjbhgugyugyu hbhbyhbygy
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-1">
+                        <img src="imagenes/inf.png" alt="">
+                        <div class="info-2">
+                            <h3>Loren</h3>
+                            <p>
+                                lorem imppun la lel lel lom ljdnfjj jmjfkjh hjbhgugyugyu hbhbyhbygy
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="info-img">
+                <img src="imagenes/r.png" altl="">
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="footer container">
+
+        <img class="logo-2" src="imagenes/logorosa.png" alt="">
+
+        <div class="links">
+            <h4>Lorem</h4>
+            <ul>
+                <Li><a href="#">LOREM</a></Li>
+                <Li><a href="#">LOREM</a></Li>
+                <Li><a href="#">LOREM</a></Li>
+                <Li><a href="#">LOREM</a></Li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Lorem</h4>
+            <ul>
+                <Li><a href="#">LOREM</a></Li>
+                <Li><a href="#">LOREM</a></Li>
+                <Li><a href="#">LOREM</a></Li>
+                <Li><a href="#">LOREM</a></Li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Lorem</h4>
+            <ul>
+                <Li><a href="#">LOREM</a></Li>
+                <Li><a href="#">LOREM</a></Li>
+                <Li><a href="#">LOREM</a></Li>
+                <Li><a href="#">LOREM</a></Li>
+            </ul>
+        </div>
+
+        <div class="links">
+            <h4>Lorem</h4>
+            <div class="socials">
+                <a href="https://www.youtube.com/watch?v=Y8CEimoVAfA">
+                    <div class="social">
+                        <img src="imagenes/s1.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social">
+                        <img src="imagenes/s2.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social">
+                        <img src="imagenes/s3.svg" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
